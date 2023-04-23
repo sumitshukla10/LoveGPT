@@ -5,8 +5,8 @@ import { useLazyGetSummaryQuery } from "../services/article";
 
 const Demo = () => {
   const [article, setArticle] = useState({
-    url: "",
-    summary: "",
+    url: '',
+    summary: '',
   });
   const [allArticles, setAllArticles] = useState([]);
   const [copied, setCopied] = useState("");
@@ -38,7 +38,7 @@ const Demo = () => {
       const updatedAllArticles = [newArticle, ...allArticles];
 
       setArticle(newArticle);
-      // console.log(newArticle);
+      console.log(newArticle);
       setAllArticles(updatedAllArticles);
       localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
     }
@@ -116,7 +116,7 @@ const Demo = () => {
           <img src={loader} alt='loader' className='w-20 h-20 object-contain' />
         ) : error ? (
           <p className='font-inter font-bold text-black text-center'>
-            Well, that wasn't supposed to happen...
+            Well, that wasn't supposed to happen...sorry for inconvinience
             <br />
             <span className='font-satoshi font-normal text-gray-700'>
               {error?.data?.error}

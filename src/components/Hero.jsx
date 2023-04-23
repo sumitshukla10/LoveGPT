@@ -11,7 +11,7 @@ const Hero = () => {
         <button
           type='button'
           onClick={() =>
-            window.open("https://github.com/sumitshukla10", "_blank")
+            window.open("https://github.com/sumitshukla10/vihaan6.0", "_blank")
           }
           className='black_btn'
         >
@@ -20,7 +20,7 @@ const Hero = () => {
       </nav>
 
       <h1 className='head_text'>
-        Summarize Articles with <br className='max-md:hidden' />
+        Get Your Summary with <br className='max-md:hidden' />
         <span className='blue_gradient '>LoveGPT-4 by Team Invalid</span>
       </h1>
       <h2 className='desc to-blue-500'>
